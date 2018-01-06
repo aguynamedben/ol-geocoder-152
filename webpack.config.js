@@ -17,6 +17,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+  ],
+  resolve: {
+    alias: {
+      'ol-geocoder': 'ol-geocoder/dist/ol-geocoder-debug',
+    },
+  },
 };
